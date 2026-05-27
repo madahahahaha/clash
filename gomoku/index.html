@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>五子棋 Gomoku</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="panel">
+      <h1>五子棋</h1>
+      <p class="sub">黑棋先手，五子连珠获胜。</p>
+      <div class="status-card">
+        <div id="status">当前回合：黑棋</div>
+        <div class="legend">
+          <span><i class="stone black"></i> 黑棋</span>
+          <span><i class="stone white"></i> 白棋</span>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="restart">重新开始</button>
+        <button id="undo">悔棋</button>
+      </div>
+      <p class="tip">玩法：点击棋盘交叉点落子。支持胜负判断、悔棋、重新开始。</p>
+    </section>
+    <section class="board-wrap">
+      <canvas id="board" width="660" height="660" aria-label="五子棋棋盘"></canvas>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
